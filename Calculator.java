@@ -24,7 +24,8 @@ class Calculator extends Child
     }
     public static void main(String[] args) {
         Calculator calc= new Calculator();
-   
+        float operand_1 =10;
+        float operand_1 =10;
 
  Scanner sc= new Scanner(System.in);
  System.out.println("ENTER THE OPERAND 1");
