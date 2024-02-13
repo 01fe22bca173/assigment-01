@@ -1,61 +1,61 @@
-/**
- * The Calculator class is used for performing mathematical calculations.
- */
-/**
- 
- */
-import java.util.Scanner;
-class Calculator extends Child
-{
-    float addition( float operand_1,float operand_2){
-        return(operand_1+operand_2);
+class Calculator{
+    /**
+     * The function "addition" takes two float numbers as input and returns their sum.
+     *
+     * @param num1 A float variable representing the first number to be added.
+     * @param num2 The parameter "num2" is a float type variable that represents the second number to
+     * be added in the addition function.
+     * @return The sum of num1 and num2.
+     */
+    float addition (float num1,float num2){
+        return(num1+num2);
     }
-    float subtraction( float operand_1,float operand_2){
-        return(operand_1-operand_2);
-    }
-    float multiplication( float operand_1,float operand_2){
-        return(operand_1*operand_2);
-    }
-    float division( float operand_1,float operand_2){
-        return(operand_1/operand_2);
-    }
-    float square(float operand_1){
-        return(operand_1*operand_1);
-    }
-    public static void main(String[] args) {
-        Calculator calc= new Calculator();
-        float operand_1 =10;
-        float operand_2 =10;
-
- Scanner sc= new Scanner(System.in);
- System.out.println("ENTER THE OPERAND 1");
- int operand_1=sc.nextInt();
- System.out.println("ENTER THE OPERAND 2");
- int operand_2=sc.nextInt();
-
- 
- float add_result=calc.addition(operand_1,operand_2);
- System.out.println("result of subtraction is:"+add_result);
-
-            float sub_result=calc.subtraction(operand_1,operand_2);
-    System.out.println("result of subtraction is:"+sub_result);
-
-    float mul_result=calc.multiplication(operand_1,operand_2);
-    System.out.println("result of multiplication is:"+mul_result);
-
-    float div_result=calc.division(operand_1,operand_2);
-    System.out.println("result of division:"+div_result);
-
-    float sq_result=calc.square(operand_1);
-    System.out.println("result of square is:"+sq_result);
-
-    float cube_result=calc.cube(operand_1);
-    System.out.println("result of cube is:"+cube_result);
-
-    float modulus_result=calc.mod(operand_1,operand_2);
-    System.out.println("result of mod is:"+modulus_result);
-
+    /**
+     * The above function performs subtraction of two floating-point numbers.
+     *
+     * @param num1 The first number to be subtracted.
+     * @param num2 The second number to be subtracted from the first number.
+     * @return the sum of num1 and num2.
+     */
    
+    float substraction (float num1,float num2){
+        return(num1-num2);
     }
-       
+  /**
+   * The function takes two float numbers as input and returns their sum.
+   *
+   * @param num1 The first number to be multiplied. It is of type float.
+   * @param num2 The second floating-point number to be multiplied.
+   * @return The sum of num1 and num2 is being returned.
+   */
+    float multiplication (float num1,float num2){
+        return(num1*num2);
     }
+
+   /**
+    * The function "division" takes two float numbers as input and returns their division.
+    *
+    * @param num1 A floating-point number representing the numerator of the division operation.
+    * @param num2 The second number to be divided.
+    * @return the result of dividing `num1` by `num2`.
+    */
+    float division (float num1,float num2){
+        return(num1/num2);
+    }
+
+
+// The code is defining a `main` method which serves as the entry point for the Java program.
+public static void main(String []args){
+    Calculator calc=new Calculator();
+    float num1=6;
+    float num2=56;
+    float add=calc.addition(num1,num2);
+    System.out.println("Addition:"+add);
+    float sub=calc.substraction(num1,num2);
+    System.out.println("Substraction:"+sub);
+    float mul=calc.multiplication(num1,num2);
+    System.out.println("Multiplication:"+mul);
+    float div=calc.division(num1,num2);
+    System.out.println("Division:"+div);
+}
+}
